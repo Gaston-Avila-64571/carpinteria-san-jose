@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carpintería San José — Muebles a medida</title>
+    <meta name="description"
+        content="Carpintería San José: muebles de madera hechos a medida para tu hogar. Diseño, calidad y trabajo artesanal en cada mueble." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand">
+
+                <span class="brand__mark">
+                    <img src="imagenes/logo/logo.png" alt="" class="brand__logo" />
+                </span>
+
+                <span class="brand__text">
+                    <span class="brand__name">SAN JOSÉ</span>
+                    <span class="brand__sub">Carpintería</span>
+                </span>
+
+            </a>
+
+            <nav class="nav-links" data-menu aria-label="Navegación principal">
+                <a href="index.html" aria-current="page">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="carrito.html" class="cart-link" aria-label="Ver carrito">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                    <span class="cart-link__count" data-cart-count hidden>0</span>
+                </a>
+
+                <button class="nav-toggle" data-menu-toggle aria-label="Abrir menú" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================== HERO — CARRUSEL DE 4 IMÁGENES ===================== -->
+        <!-- Reemplazar cada .hero-carousel__slide--N en style.css por imagenes/home/hero-N.jpg -->
+        <section class="hero-carousel" data-hero-carousel aria-label="Presentación principal">
+            <div class="hero-carousel__track">
+                <article class="hero-carousel__slide hero-carousel__slide--1">
+                    <div class="container hero-carousel__copy">
+                        <span class="eyebrow" style="color:#f0d9b8;">Carpintería artesanal · a medida</span>
+                        <h1 class="hero-carousel__title">Muebles hechos a medida</h1>
+                        <p class="hero-carousel__text">
+                            Diseñamos muebles personalizados para que cada espacio tenga
+                            exactamente lo que necesitás.
+                        </p>
+                        <a href="productos.html" class="btn btn--primary">Ver productos</a>
+                    </div>
+                </article>
+
+                <article class="hero-carousel__slide hero-carousel__slide--2">
+                    <div class="container hero-carousel__copy">
+                        <span class="eyebrow" style="color:#f0d9b8;">Diseño a tu medida</span>
+                        <h1 class="hero-carousel__title">Diseño que se adapta a vos</h1>
+                        <p class="hero-carousel__text">
+                            Elegimos medidas, materiales y terminaciones para crear muebles únicos.
+                        </p>
+                        <a href="servicios.html" class="btn btn--primary">Conocé nuestros servicios</a>
+                    </div>
+                </article>
+
+                <article class="hero-carousel__slide hero-carousel__slide--3">
+                    <div class="container hero-carousel__copy">
+                        <span class="eyebrow" style="color:#f0d9b8;">Materiales seleccionados</span>
+                        <h1 class="hero-carousel__title">Calidad en cada detalle</h1>
+                        <p class="hero-carousel__text">
+                            Trabajamos con materiales seleccionados y cuidamos cada terminación.
+                        </p>
+                        <a href="nosotros.html" class="btn btn--primary">Conocé nuestra historia</a>
+                    </div>
+                </article>
+
+                <article class="hero-carousel__slide hero-carousel__slide--4">
+                    <div class="container hero-carousel__copy">
+                        <span class="eyebrow" style="color:#f0d9b8;">Tu proyecto a medida</span>
+                        <h1 class="hero-carousel__title">Tu proyecto, hecho realidad</h1>
+                        <p class="hero-carousel__text">
+                            Contanos qué necesitás y te ayudamos a convertir tu idea en un mueble.
+                        </p>
+                        <a href="configurador.html" class="btn btn--primary">Pedir presupuesto</a>
+                    </div>
+                </article>
+            </div>
+
+            <button class="hero-carousel__arrow hero-carousel__arrow--prev" aria-label="Diapositiva anterior">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="hero-carousel__arrow hero-carousel__arrow--next" aria-label="Siguiente diapositiva">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+            <div class="hero-carousel__dots" role="tablist" aria-label="Seleccionar diapositiva"></div>
+        </section>
+
+        <!-- ===================== PROPUESTA DE VALOR ===================== -->
+        <section class="valores">
+            <div class="container valores__grid">
+                <article class="valor">
+                    <span class="valor__icono" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 21 21 3"></path>
+                            <path d="M7 17 5 15"></path>
+                            <path d="M11 13 9 11"></path>
+                            <path d="M15 9 13 7"></path>
+                        </svg>
+                    </span>
+                    <div>
+                        <h3>A medida</h3>
+                        <p>Diseños personalizados para cada espacio.</p>
+                    </div>
+                </article>
+
+                <article class="valor">
+                    <span class="valor__icono" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 2 3 8l9 6 9-6-9-6Z"></path>
+                            <path d="M3 16l9 6 9-6"></path>
+                            <path d="M3 8v8"></path>
+                            <path d="M21 8v8"></path>
+                        </svg>
+                    </span>
+                    <div>
+                        <h3>Calidad</h3>
+                        <p>Materiales seleccionados y excelentes terminaciones.</p>
+                    </div>
+                </article>
+
+                <article class="valor">
+                    <span class="valor__icono" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"></path>
+                        </svg>
+                    </span>
+                    <div>
+                        <h3>Artesanal</h3>
+                        <p>Trabajo cuidado en cada detalle.</p>
+                    </div>
+                </article>
+
+                <article class="valor">
+                    <span class="valor__icono" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"></path>
+                        </svg>
+                    </span>
+                    <div>
+                        <h3>Confianza</h3>
+                        <p>Acompañamiento y asesoramiento desde el primer día.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===================== PRODUCTOS DESTACADOS ===================== -->
+        <section class="productos" id="productos-destacados">
+            <div class="container">
+                <div class="productos__head">
+                    <div>
+                        <span class="eyebrow">Tienda</span>
+                        <h2>Productos destacados</h2>
+                        <div class="tick-rule"></div>
+                    </div>
+                    <a href="productos.html" class="btn btn--outline">Ver toda la tienda</a>
+                </div>
+
+                <div class="product-grid" data-productos-destacados>
+                    <!-- Generado dinámicamente desde js/productos.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SERVICIOS ===================== -->
+        <section class="servicios">
+            <div class="container">
+                <div class="servicios__head">
+                    <span class="eyebrow">Qué hacemos</span>
+                    <h2>Nuestros servicios</h2>
+                    <p>Soluciones pensadas para cada proyecto.</p>
+                </div>
+
+                <div class="servicios__grid">
+                    <article class="servicio-card">
+                        <span class="servicio-card__icono" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="3" y="4" width="18" height="14" rx="1.5"></rect>
+                                <path d="M3 10h18"></path>
+                            </svg>
+                        </span>
+                        <h3>Muebles a medida</h3>
+                        <p>Diseñamos y fabricamos muebles personalizados según las medidas, necesidades y estilo de cada
+                            espacio.</p>
+                        <a href="servicios.html" class="btn btn--outline btn--sm">Conocer más</a>
+                    </article>
+
+                    <article class="servicio-card">
+                        <span class="servicio-card__icono" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path>
+                                <circle cx="12" cy="12" r="5"></circle>
+                            </svg>
+                        </span>
+                        <h3>Diseño y asesoramiento</h3>
+                        <p>Te acompañamos desde la idea inicial hasta la elección de materiales, medidas y
+                            terminaciones.</p>
+                        <a href="servicios.html" class="btn btn--outline btn--sm">Conocer más</a>
+                    </article>
+
+                    <article class="servicio-card">
+                        <span class="servicio-card__icono" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M3 12a9 9 0 1 0 3-6.7"></path>
+                                <path d="M3 4v5h5"></path>
+                            </svg>
+                        </span>
+                        <h3>Restauración y renovación</h3>
+                        <p>Recuperamos y renovamos muebles para darles una nueva vida manteniendo su esencia.</p>
+                        <a href="servicios.html" class="btn btn--outline btn--sm">Conocer más</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CTA "DÉMOSLE FORMA" ===================== -->
+        <section class="cta-proyecto">
+            <div class="container cta-proyecto__grid">
+                <div class="cta-proyecto__contenido">
+                    <span class="eyebrow">¿Tenés un proyecto en mente?</span>
+                    <h2 class="cta-proyecto__titulo">Démosle forma.</h2>
+                    <p class="cta-proyecto__texto">
+                        Diseñamos y fabricamos muebles pensados especialmente para tu espacio.
+                    </p>
+                    <a href="configurador.html" class="btn btn--cta-proyecto">
+                        Pedir presupuesto
+                        <span class="cta-proyecto__flecha" aria-hidden="true">→</span>
+                    </a>
+                    <p class="cta-proyecto__meta">Muebles a medida · Diseño personalizado · Fabricación artesanal</p>
+                </div>
+
+                <div class="cta-proyecto__imagen">
+                    <!-- Imagen sugerida: mueble de madera a medida -->
+                    <div class="cta-proyecto__foto" role="img"
+                        aria-label="Mueble de madera a medida fabricado de forma artesanal en el taller"></div>
+                    <span class="cta-proyecto__etiqueta">100% a medida</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TESTIMONIOS ===================== -->
+        <section class="testimonios">
+            <div class="container">
+                <div class="testimonios__head">
+                    <span class="eyebrow">Clientes</span>
+                    <h2>Lo que dicen nuestros clientes</h2>
+                </div>
+
+                <div class="testimonios-carousel" data-testimonios-carousel>
+                    <div class="testimonios__viewport">
+                        <div class="testimonios__track" data-testimonios-track>
+                            <!-- Generado dinámicamente desde main.js (array TESTIMONIOS) -->
+                        </div>
+                    </div>
+
+                    <div class="testimonios__controles">
+                        <button class="testimonios__arrow testimonios__arrow--prev" aria-label="Testimonios anteriores">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="testimonios__dots" data-testimonios-dots></div>
+                        <button class="testimonios__arrow testimonios__arrow--next" aria-label="Siguientes testimonios">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <div class="brand" style="margin-bottom: 0.75rem;">
+                    <span class="brand__mark footer__brand-mark" aria-hidden="true">
+                        <img src="imagenes/logo/logo.png" alt="" class="brand__logo" />
+                    </span>
+
+                    <span class="brand__text">
+                        <span class="brand__name" style="color: var(--color-blanco);">SAN JOSÉ</span>
+                        <span class="brand__sub" style="color: rgba(245,235,221,0.7);">Carpintería</span>
+                    </span>
+                </div>
+                <p>Muebles de madera maciza, hechos a medida, con foco en el detalle artesanal.</p>
+                <div class="footer__redes">
+
+                    <!-- Instagram -->
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3.5"></circle>
+                            <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle>
+                        </svg>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H8v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"></path>
+                        </svg>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="#" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M20.5 11.8a8.5 8.5 0 0 1-12.4 7.5L3.5 21l1.7-4.4A8.5 8.5 0 1 1 20.5 11.8Z"></path>
+                            <path
+                                d="M8.2 7.7c.2-.4.4-.4.7-.4h.6c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4 0 .6l-.5.7c-.1.2-.1.4 0 .6.4.8 1.1 1.5 1.9 1.9.2.1.4.1.6 0l.7-.5c.2-.1.4-.1.6 0l1.8.8c.2.1.4.3.4.5v.6c0 .3 0 .5-.4.7-.4.2-1.4.4-2.7-.1-1.3-.5-2.4-1.3-3.3-2.2-.9-.9-1.7-2-2.2-3.3-.5-1.3-.3-2.3-.1-2.7Z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M6.5 8.5H3.2V20h3.3V8.5ZM4.85 3C3.8 3 3 3.8 3 4.85S3.8 6.7 4.85 6.7s1.85-.8 1.85-1.85S5.9 3 4.85 3ZM20.8 13.4c0-3.45-1.84-5.05-4.3-5.05-1.98 0-2.86 1.09-3.35 1.86V8.5H9.85V20h3.3v-5.68c0-1.5.28-2.95 2.14-2.95 1.83 0 1.86 1.72 1.86 3.06V20h3.3l.35-6.6Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contacto</h4>
+                <p>General Paz 1234, Córdoba</p>
+                <p>WhatsApp: +54 9 351 000-0000</p>
+                <p>info@carpinteriasanjose.com</p>
+                <p>Lunes a viernes de 9 a 18 hs</p>
+            </div>
+        </div>
+
+        <div class="footer__bottom">© 2026 Carpintería San José. Todos los derechos reservados.</div>
+    </footer>
+
+    <script src="js/data/productos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
