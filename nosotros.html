@@ -14,7 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/styles-nosotros.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/styles-nosotros.css" />
 </head>
 
 <body>
@@ -80,14 +81,45 @@
         <section class="historia">
             <div class="container historia__grid">
                 <div>
-                    <h2 class="historia__titulo">Nuestra historia</h2>
-                    <p class="historia__texto">
-                        Carpintería San José nace de la pasión por el trabajo artesanal y el amor por
-                        la madera. Desde nuestros inicios, nos dedicamos a crear muebles de calidad,
-                        pensados para durar y formar parte de tu hogar.
-                    </p>
-                    <a href="servicios.html" class="btn btn--outline">Conocé más</a>
-                </div>
+    <h2 class="historia__titulo">Nuestra historia</h2>
+
+    <p class="historia__texto">
+        Carpintería San José nace de la pasión por el trabajo artesanal y el amor por
+        la madera. Desde nuestros inicios, nos dedicamos a crear muebles de calidad,
+        pensados para durar y formar parte de tu hogar.
+    </p>
+
+    <div class="historia__extra" id="historia-extra">
+        <p>
+            Con el paso de los años, fuimos creciendo junto a cada persona y cada
+            familia que confió en nuestro trabajo. Cada proyecto representa una
+            oportunidad para transformar una idea en una pieza única, pensada
+            especialmente para cada espacio.
+        </p>
+
+        <p>
+            Trabajamos cada pieza con dedicación, cuidando la selección de los
+            materiales y prestando atención a cada detalle del proceso. Creemos que
+            un buen mueble no solo debe ser funcional, sino también formar parte
+            de la historia de quienes lo eligen.
+        </p>
+
+        <p>
+            Hoy seguimos manteniendo esa misma esencia: el compromiso con el trabajo
+            bien hecho, el respeto por la madera y la búsqueda constante de ofrecer
+            productos que duren y acompañen durante muchos años.
+        </p>
+    </div>
+
+    <button
+        type="button"
+        class="btn btn--outline historia__toggle"
+        aria-expanded="false"
+        aria-controls="historia-extra"
+    >
+        Conocé más
+    </button>
+</div>
 
                 <!-- Reemplazar por: imagenes/nosotros/historia.jpg -->
                 <div class="historia__imagen" role="img"
@@ -268,6 +300,7 @@
 
     <script src="js/data/productos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/nosotros.js"></script>
 </body>
 
 </html>
