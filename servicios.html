@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — Carpintería San José</title>
+  <meta
+    name="description"
+    content="Conocé los servicios de Carpintería San José: muebles a medida, diseño y asesoramiento, y restauración y renovación de muebles."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles-servicios.css" />
+</head>
+<body>
+  <!-- ===================== NAVBAR (idéntico al resto del sitio, + dropdown de Servicios) ===================== -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">
+          <img src="imagenes/logo/logo.png" alt="" />
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">SAN JOSÉ</span>
+          <span class="brand__sub">Carpintería</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" data-menu aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+
+        <div class="nav-item nav-item--dropdown">
+          <a href="servicios.html" aria-current="page">Servicios</a>
+          <button
+            class="nav-item__caret"
+            type="button"
+            aria-expanded="false"
+            aria-controls="servicios-submenu"
+            aria-label="Mostrar submenú de Servicios"
+            data-dropdown-trigger
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="nav-dropdown" id="servicios-submenu">
+            <span class="nav-dropdown__label">Servicios</span>
+            <a href="servicio-muebles-medida.html">Muebles a medida</a>
+            <a href="servicio-diseno.html">Diseño y asesoramiento</a>
+            <a href="servicio-restauracion.html">Restauración y renovación</a>
+          </div>
+        </div>
+
+        <a href="productos.html">Productos</a>
+        <a href="galeria.html">Galería</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="carrito.html" class="cart-link" aria-label="Ver carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-link__count" data-cart-count hidden>0</span>
+        </a>
+
+        <button class="nav-toggle" data-menu-toggle aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO / INTRODUCCIÓN (estilo Opción 3) ===================== -->
+    <!-- Reemplazar la imagen de .servicios-intro__foto por: imagenes/servicios/hero-servicios.jpg -->
+    <section class="servicios-intro">
+      <div class="container servicios-intro__grid">
+        <div class="servicios-intro__copy">
+          <span class="eyebrow">Servicios</span>
+          <h1 class="servicios-intro__titulo">Diseñamos y construimos para vos.</h1>
+          <p class="servicios-intro__texto">
+            En Carpintería San José ofrecemos soluciones a medida, con atención al
+            detalle y trabajo artesanal en cada etapa: desde la primera idea hasta
+            el mueble terminado en tu casa.
+          </p>
+        </div>
+
+        <div
+          class="servicios-intro__foto"
+          role="img"
+          aria-label="Carpintero trabajando la madera en el taller de San José"
+        ></div>
+      </div>
+    </section>
+
+
+    <!-- ===================== NUESTROS SERVICIOS ===================== -->
+    <section class="servicios-grid-section">
+      <div class="container">
+        <div class="servicios-grid-section__head">
+          <span class="eyebrow">Qué hacemos</span>
+          <h2>Nuestros servicios</h2>
+        </div>
+
+        <div class="servicios-grid">
+          <article class="servicio-grande">
+            <div class="servicio-grande__media">
+              <!-- Reemplazar por: imagenes/servicios/muebles-medida.jpg -->
+              <img src="imagenes/servicios/muebles-a-medida-servicios.png" alt="Mueble de madera fabricado a medida" loading="lazy" />
+            </div>
+            <div class="servicio-grande__body">
+              <h3>Muebles a medida</h3>
+              <p>Diseñamos y fabricamos muebles personalizados según las medidas, necesidades y estilo de cada espacio.</p>
+              <a href="servicio-muebles-medida.html" class="btn btn--outline btn--sm">Ver servicio</a>
+            </div>
+          </article>
+
+          <article class="servicio-grande">
+            <div class="servicio-grande__media">
+              <!-- Reemplazar por: imagenes/servicios/diseno-asesoramiento.jpg -->
+              <img src="imagenes/servicios/diseño-asesoramiento-servicios.png" alt="Mesa de trabajo con planos y muestras de madera" loading="lazy" />
+            </div>
+            <div class="servicio-grande__body">
+              <h3>Diseño y asesoramiento</h3>
+              <p>Te acompañamos desde la idea inicial para encontrar soluciones funcionales, estéticas y pensadas para tu espacio.</p>
+              <a href="servicio-diseno.html" class="btn btn--outline btn--sm">Ver servicio</a>
+            </div>
+          </article>
+
+          <article class="servicio-grande">
+            <div class="servicio-grande__media">
+              <!-- Reemplazar por: imagenes/servicios/restauracion.jpg -->
+              <img src="imagenes/servicios/restauracion-renovacion-servicios.png" alt="Mueble antiguo de madera en proceso de restauración" loading="lazy" />
+            </div>
+            <div class="servicio-grande__body">
+              <h3>Restauración y renovación</h3>
+              <p>Recuperamos muebles y piezas de madera para devolverles funcionalidad, carácter y una nueva vida.</p>
+              <a href="servicio-restauracion.html" class="btn btn--outline btn--sm">Ver servicio</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ¿CÓMO TRABAJAMOS? ===================== -->
+    <section class="proceso">
+      <div class="container">
+        <div class="proceso__head">
+          <span class="eyebrow">Nuestro proceso</span>
+          <h2>¿Cómo trabajamos?</h2>
+        </div>
+
+        <div class="proceso__grid">
+          <article class="proceso__paso">
+            <span class="proceso__numero">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.5A8.5 8.5 0 1 1 21 11.5Z"></path>
+              </svg>
+            </span>
+            <div class="proceso__texto">
+              <span class="proceso__num-label">01</span>
+              <h3>Nos contás tu idea</h3>
+              <p>Conversamos sobre lo que necesitás, el espacio y el objetivo del proyecto.</p>
+            </div>
+          </article>
+          <article class="proceso__paso">
+            <span class="proceso__numero">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="m14 7 3 3-9 9H5v-3l9-9Z"></path>
+                <path d="m17 4 3 3"></path>
+              </svg>
+            </span>
+            <div class="proceso__texto">
+              <span class="proceso__num-label">02</span>
+              <h3>Diseñamos la propuesta</h3>
+              <p>Definimos medidas, materiales, estilo y detalles.</p>
+            </div>
+          </article>
+          <article class="proceso__paso">
+            <span class="proceso__numero">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="m14.5 9.5 5 5"></path>
+                <path d="M3 21l7-7"></path>
+                <path d="m12.5 8.5 3-3a2 2 0 0 1 2.8 0l1.2 1.2a2 2 0 0 1 0 2.8l-3 3-4-4Z"></path>
+              </svg>
+            </span>
+            <div class="proceso__texto">
+              <span class="proceso__num-label">03</span>
+              <h3>Manos a la obra</h3>
+              <p>Fabricamos, restauramos o desarrollamos el proyecto según lo acordado.</p>
+            </div>
+          </article>
+          <article class="proceso__paso">
+            <span class="proceso__numero">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <polyline points="4 12 9 17 20 6"></polyline>
+              </svg>
+            </span>
+            <div class="proceso__texto">
+              <span class="proceso__num-label">04</span>
+              <h3>Entregamos el resultado</h3>
+              <p>Instalamos o entregamos el trabajo terminado, listo para disfrutar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ALGUNOS DE NUESTROS TRABAJOS ===================== -->
+    <section class="trabajos">
+      <div class="container">
+        <div class="trabajos__head">
+          <span class="eyebrow">Portfolio</span>
+          <h2>Algunos de nuestros trabajos</h2>
+        </div>
+
+        <div class="trabajos__grid">
+          <figure class="trabajo">
+            <!-- Reemplazar por: imagenes/servicios/trabajo-1.jpg -->
+            <img src="imagenes/servicios/ejemplo-1-servicios.png" alt="Living amoblado con muebles de madera a medida" loading="lazy" />
+          </figure>
+          <figure class="trabajo">
+            <!-- Reemplazar por: imagenes/servicios/trabajo-2.jpg -->
+            <img src="imagenes/servicios/ejemplo-2-servicios.png" alt="Detalle de terminación en madera maciza" loading="lazy" />
+          </figure>
+          <figure class="trabajo">
+            <!-- Reemplazar por: imagenes/servicios/trabajo-3.jpg -->
+            <img src="imagenes/servicios/ejemplo-3-servicios.png" alt="Biblioteca a medida en un living" loading="lazy" />
+          </figure>
+          <figure class="trabajo">
+            <!-- Reemplazar por: imagenes/servicios/trabajo-4.jpg -->
+            <img src="imagenes/servicios/ejemplo-4-servicios.png" alt="Mueble restaurado con terminación renovada" loading="lazy" />
+          </figure>
+          <figure class="trabajo">
+            <!-- Reemplazar por: imagenes/servicios/trabajo-5.jpg -->
+            <img src="imagenes/servicios/ejemplo-5-servicios.png" alt="Placard a medida instalado en un dormitorio" loading="lazy" />
+          </figure>
+          <figure class="trabajo">
+            <!-- Reemplazar por: imagenes/servicios/trabajo-6.jpg -->
+            <img src="imagenes/servicios/ejemplo-6-servicios.png" alt="Detalle de herrajes y madera en un mueble artesanal" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="trabajos__cta">
+          <a href="galeria.html" class="btn btn--outline">Ver galería completa →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta-servicios">
+      <div class="container cta-servicios__fila">
+        <div class="cta-servicios__copy">
+          <h2>¿Tenés un proyecto en mente?</h2>
+          <p>Contanos qué estás imaginando y encontremos juntos la mejor forma de hacerlo realidad.</p>
+        </div>
+        <a href="contacto.html" class="btn btn--cta">Contactanos →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (idéntico al resto del sitio) ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <div class="brand" style="margin-bottom: 0.75rem;">
+          <span class="brand__mark" aria-hidden="true" style="border-color: var(--color-crema);">
+            <img src="imagenes/logo/logo.png" alt="" />
+          </span>
+          <span class="brand__text">
+            <span class="brand__name" style="color: var(--color-blanco);">SAN JOSÉ</span>
+            <span class="brand__sub" style="color: rgba(245,235,221,0.7);">Carpintería</span>
+          </span>
+        </div>
+        <p>Muebles de madera maciza, hechos a medida, con foco en el detalle artesanal.</p>
+        <div class="footer__redes">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle>
+              <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H8v3h2v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1Z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.5A8.5 8.5 0 1 1 21 11.5Z"></path>
+              <path d="M8.5 10.5c.3 2.5 2.5 4.5 5 4.7"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+              <line x1="8" y1="10" x2="8" y2="17"></line>
+              <circle cx="8" cy="7" r="0.6" fill="currentColor" stroke="none"></circle>
+              <path d="M12 17v-4.5c0-1.4 1-2.5 2.3-2.5s2.2 1.1 2.2 2.5V17"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>General Paz 1234, Córdoba</p>
+        <p>WhatsApp: +54 9 351 000-0000</p>
+        <p>info@carpinteriasanjose.com</p>
+        <p>Lunes a viernes de 9 a 18 hs</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">© 2026 Carpintería San José. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="js/productos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

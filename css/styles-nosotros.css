@@ -497,6 +497,22 @@ p { margin: 0; color: var(--color-texto-suave); }
 .historia__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--espacio-4); align-items: center; }
 .historia__titulo { font-size: clamp(1.7rem, 3vw, 2.3rem); }
 .historia__texto { margin-top: var(--espacio-2); max-width: 46ch; }
+.historia__extra {
+  display: none;
+  max-width: 46ch;
+}
+
+.historia__extra.is-visible {
+  display: block;
+}
+
+.historia__extra p {
+  margin-top: var(--espacio-2);
+}
+
+.historia__toggle {
+  margin-top: var(--espacio-3);
+}
 .historia .btn { margin-top: var(--espacio-3); }
 .historia__imagen {
   aspect-ratio: 4 / 3.1;
